@@ -84,12 +84,13 @@ $(".btn").click (function(){
 
 // 7. Start the game
 $(document).keypress (function(){
+  startOver();
   var level = 0;
   var name = nextSequence(level);
-  playSound(name);
 });
-$(document).click (function(){
+$("#start").click (function(){
+  startOver();
   var level = 0;
   var name = nextSequence(level);
-  playSound(name);
+  $("#start").text("Restart");
 });
