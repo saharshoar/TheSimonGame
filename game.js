@@ -83,7 +83,12 @@ $(".btn").click (function(){
 
 
 // 7. Start the game
-$(document).keypress(function(){
+$(document).keypress (function(){
+  var level = 0;
+  var name = nextSequence(level);
+  playSound(name);
+});
+$(document).click (function(){
   var level = 0;
   var name = nextSequence(level);
   playSound(name);
