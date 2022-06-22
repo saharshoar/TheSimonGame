@@ -87,6 +87,7 @@ $(document).keypress (function(){
   startOver();
   var level = 0;
   var name = nextSequence(level);
+  $("#start").text("Restart");
 });
 $("#start").click (function(){
   startOver();
